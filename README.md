@@ -67,3 +67,26 @@ Equipe de logística e clientes que aguardam a entrega.
 4. O nó **Set** organiza os dados para envio.  
 5. Dependendo do canal disponível, o nó de **WhatsApp** ou **Email** dispara a notificação.  
 6. O registro é salvo em banco ou planilha para controle e auditoria.  
+
+## 📊 Infográfico da Automação
+
+![Infográfico Automação N8N Logística](https://copilot.microsoft.com/th/id/BCO.1bdaca36-26fb-4b90-8313-8ea6982b64db.png)
+
+
+## 🔄 Fluxo Simplificado da Automação
+
+Sistema de Rastreio  
+   ↓  
+Webhook / HTTP Request  
+   ↓  
+IF (verifica mudança de status)  
+   ↓  
+Function (processa dados e ETA)  
+   ↓  
+Set (organiza campos: status, ETA, contato)  
+   ↓  
+WhatsApp API → Cliente  
+E-mail → Cliente  
+   ↓  
+Database / Google Sheets (registra notificação enviada)
+
